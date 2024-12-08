@@ -1,0 +1,80 @@
+/ src/styles/index.css /
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/ Basic Styling /
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8; / Light background /
+  color: #333; / Dark text /
+  transition: background-color 0.3s ease; / Smooth transition for theme change /
+}
+
+body.dark {
+  background-color: #222; / Dark background /
+  color: #eee; / Light text /
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/ Component-Specific Styles (Adjust as needed) /
+.color-picker-wrapper {
+    margin-bottom: 1rem;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+/ Responsive Styles (Example) /
+@media (max-width: 768px) {
+  .flex-col {
+    flex-direction: column;
+  }
+}
+
+/ Dark Mode Styles (Example) /
+.dark .bg-gray-100 {
+  background-color: #111;
+}
+.dark .text-gray-700 {
+  color: #eee;
+}
+.dark .border-gray-300 {
+    border-color: #444;
+}
+.dark .bg-gray-200{
+    background-color: #333;
+}
+.dark .text-gray-800{
+    color: #eee;
+}
+.dark .hover\:bg-gray-300{
+    @apply hover:bg-[#444];
+}
+.dark .dark\:bg-gray-700{
+    @apply bg-[#333];
+}
+.dark .dark\:hover\:bg-gray-600{
+    @apply hover:bg-[#444];
+}
+.dark .dark\:text-gray-300{
+    @apply text-[#eee];
+}
+.dark .border-gray-600{
+    border-color: #444;
+}
+.dark .bg-gray-700{
+    background-color: #333;
+}
+.dark .text-gray-300{
+    color: #eee;
+}
+
+```
