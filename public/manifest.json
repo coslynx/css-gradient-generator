@@ -1,0 +1,22 @@
+{
+  "name": "Random Gradient Generator",
+  "short_name": "GradientGen",
+  "description": "A tool for generating CSS linear and radial gradients.",
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0072ff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait"
+}
+```
